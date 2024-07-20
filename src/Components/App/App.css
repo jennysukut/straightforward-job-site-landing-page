@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Satoshi Bold";
+  src: url(../../vendor/Satoshi-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Satoshi Medium";
+  src: url(../../vendor/Satoshi-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Satoshi Medium Italic";
+  src: url(../../vendor/Satoshi-MediumItalic.ttf);
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  border-radius: 150px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--jade);
+  background-color: var(--cream);
+  color: var(--jade);
+  box-shadow: var(--box-shadow-small) var(--jade);
+  margin-left: 2vw;
+  font-family: "Satoshi Bold";
+  /* font-size: 0.9vw; */
+  letter-spacing: 3px;
+  /* height: 2.5vw; */
+  /* padding-left: 1.2vw;
+  padding-right: 1.2vw; */
+  padding: 0.8vw 2vw;
+  font-size: 1vw;
+}
+
+.app {
+  font-family: "Satoshi Bold";
+  font-size: 1.3vw;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__container {
+  position: fixed;
+  bottom: 0;
+}
+
+:focus-visible {
+  outline: -webkit-focus-ring-color var(--darkgreen) 1px;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: var(--cream);
+}

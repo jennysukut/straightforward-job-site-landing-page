@@ -1,0 +1,317 @@
+@keyframes buttonPress {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0.5vw) translateY(0.5vw);
+  }
+}
+
+.buttonPress {
+  animation: buttonPress ease 0.25s 1 forwards;
+}
+
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vw;
+}
+
+.landingPage__logo {
+  max-width: 16vw;
+  margin-left: 4.1vw;
+  align-self: flex-start;
+}
+
+.landingPage__main-info {
+  display: flex;
+  align-items: center;
+  max-width: 75vw;
+  margin: 9.5vw 0;
+}
+
+.landingPage__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.landingPage__button {
+  margin: 10px 0 10px 20px;
+  color: var(--cream);
+  border-style: none;
+}
+
+.survey-button {
+  background-color: var(--pink);
+  box-shadow: var(--box-shadow-small) var(--jade);
+}
+
+.follow-button {
+  background-color: var(--orange);
+  box-shadow: var(--box-shadow-small) var(--pink);
+  padding: 0.8vw 3vw;
+}
+
+.kickstarter-button {
+  background-color: var(--olive);
+  box-shadow: var(--box-shadow-small) var(--skyblue);
+  height: 5.7vw;
+  max-width: 230px;
+}
+
+.follow__button {
+  border: none;
+  padding: 20px 27px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.instagram {
+  background: var(--purple) url(../../images/Instagram.svg) center no-repeat;
+  box-shadow: var(--box-shadow-small) var(--lime);
+}
+
+.tiktok {
+  background: var(--apricot) url(../../images/TikTok.svg) center no-repeat;
+  box-shadow: var(--box-shadow-small) var(--jade);
+}
+
+.linkedin {
+  background: var(--lime) url(../../images/LinkedIn.svg) center no-repeat;
+  box-shadow: var(--box-shadow-small) var(--peach);
+}
+
+.landingPage__info {
+  margin: 0;
+  margin-left: 3vw;
+  max-width: 32vw;
+  line-height: 30px;
+  color: var(--darkgreen);
+}
+
+.landingPage__scroll-button {
+  color: var(--cream);
+  background-color: var(--purple);
+  box-shadow: var(--box-shadow-small) var(--lime);
+  align-self: flex-end;
+  margin-right: 13vw;
+  margin-bottom: 3vw;
+  border: none;
+}
+
+.ss__title {
+  color: var(--jade);
+}
+
+.ss__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--jade);
+  margin-bottom: 3vw;
+}
+
+.ss__detail {
+  background-color: var(--cream);
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--jade);
+  box-shadow: var(--box-shadow-large) var(--jade);
+  border-radius: 35px;
+  flex-wrap: wrap;
+  padding: 3vw;
+  width: 50vw;
+  text-align: center;
+  font-family: "Satoshi Bold";
+  font-size: 1.2vw;
+}
+
+.ss__comment {
+  font-family: "Satoshi Medium";
+  max-width: 30vw;
+  align-self: flex-end;
+  margin-right: 15vw;
+  color: var(--apricot);
+  font-size: 1.3vw;
+}
+
+.landingPage__scroll-up-button {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  background: var(--olive) url(../../images/Arrow.svg) center no-repeat;
+  box-shadow: var(--box-shadow-small) var(--skyblue);
+  border: none;
+  align-self: flex-start;
+  margin-top: -4vw;
+  padding: 0;
+}
+
+.landingPage__copyright {
+  margin-right: 2vw;
+  font-family: "Satoshi Medium";
+  font-size: 0.9vw;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 1000px) {
+  .landingPage__logo {
+    max-width: 20vw;
+  }
+
+  .landingPage__scroll-up-button {
+    width: 4vw;
+    height: 4vw;
+    background: var(--olive) url(../../images/SmallArrow.svg) center no-repeat;
+  }
+
+  .landingPage__info {
+    font-size: 1.7vw;
+  }
+
+  .landingPage__button {
+    font-size: 1.2vw;
+  }
+
+  .ss__title {
+    font-size: 1.7vw;
+  }
+
+  .ss__detail {
+    font-size: 1.4vw;
+  }
+
+  .ss__comment {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .landingPage__info {
+    line-height: 2.7vw;
+  }
+
+  .ss__detail {
+    width: 65vw;
+  }
+
+  .follow__button {
+    padding: 0;
+    width: 40px;
+    height: 30px;
+  }
+
+  .instagram {
+    background: var(--purple) url(../../images/SmallInstagram.svg) center
+      no-repeat;
+  }
+
+  .tiktok {
+    background: var(--apricot) url(../../images/SmallTikTok.svg) center
+      no-repeat;
+  }
+
+  .linkedin {
+    background: var(--lime) url(../../images/SmallLinkedIn.svg) center no-repeat;
+  }
+
+  .landingPage__scroll-up-button {
+    width: 4vw;
+    height: 4vw;
+    background: var(--olive) url(../../images/ExtraSmallArrow.svg) center
+      no-repeat;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ss__comment {
+    padding: 1vw 2.5vw;
+    font-size: 2.4vw;
+    max-width: 50vw;
+  }
+
+  .ss__detail {
+    font-size: 2.4vw;
+    padding: 5vw;
+    border-radius: 20px;
+  }
+
+  .landingPage__button {
+    font-size: 2.2vw;
+    padding: 2vw 4vw;
+  }
+
+  .ss__title {
+    font-size: 3vw;
+  }
+
+  .landingPage__info {
+    font-size: 3vw;
+    line-height: 4vw;
+    margin-left: 5vw;
+  }
+
+  .landingPage__logo {
+    max-width: 35vw;
+    margin: 3vw 0 0 4vw;
+  }
+
+  .landingPage__scroll-button {
+    margin: 5vw 0 9vw;
+    align-self: center;
+    padding: 2vw 5vw;
+  }
+
+  .landingPage__scroll-up-button {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .kickstarter-button {
+    height: auto;
+  }
+
+  .landingPage__copyright {
+    font-size: 2vw;
+  }
+
+  .survey-button {
+    box-shadow: var(--box-shadow-mobile) var(--jade);
+  }
+
+  .follow-button {
+    box-shadow: var(--box-shadow-mobile) var(--pink);
+  }
+
+  .kickstarter-button {
+    box-shadow: var(--box-shadow-mobile) var(--skyblue);
+  }
+
+  .instagram {
+    box-shadow: var(--box-shadow-mobile) var(--lime);
+  }
+
+  .tiktok {
+    box-shadow: var(--box-shadow-mobile) var(--jade);
+  }
+
+  .linkedin {
+    box-shadow: var(--box-shadow-mobile) var(--peach);
+  }
+
+  .landingPage__scroll-button {
+    box-shadow: var(--box-shadow-mobile) var(--lime);
+  }
+
+  .landingPage__scroll-up-button {
+    box-shadow: var(--box-shadow-mobile) var(--skyblue);
+  }
+}
+
+.clickButton {
+  box-shadow: none;
+  transition: 0.25s;
+}

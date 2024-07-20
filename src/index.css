@@ -1,0 +1,38 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: var(--jade) !important;
+}
+
+:root {
+  color: var(--olive);
+  background-color: var(--cream);
+  font-family: "Satoshi Bold";
+  font-size: 1.3vw;
+  letter-spacing: 3px;
+
+  --box-shadow-small: 0.4vw 0.4vw;
+  --box-shadow-large: 0.6vw 0.6vw;
+  --box-shadow-mobile: 1vw 1vw;
+  --jade: #50b09f;
+  --darkgreen: #308b7b;
+  --lime: #d5cb2c;
+  --olive: #a6a646;
+  --orange: #f38143;
+  --apricot: #fda26b;
+  --apricotshade: #f0935a;
+  --peach: #ffa08b;
+  --pink: #ffabda;
+  --hotpink: #e673a9;
+  --purple: #d6a6dc;
+  --skyblue: #bcd1d4;
+  --neutralpink: #f8dad0;
+  --cream: #f8f2ec;
+}
