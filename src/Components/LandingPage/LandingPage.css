@@ -130,12 +130,19 @@
 }
 
 .ss__comment {
-  font-family: "Satoshi Medium";
+  font-family: "Satoshi Bold";
   max-width: 30vw;
   align-self: flex-end;
   margin-right: 15vw;
-  color: var(--apricot);
-  font-size: 1.3vw;
+  font-size: 1.2vw;
+  line-height: 2.2vw;
+  background: var(--apricot);
+  padding: 2.5vw 4vw;
+  border-radius: 25px;
+  color: var(--cream);
+  box-shadow: var(--box-shadow-large) var(--lime);
+  margin-bottom: 2vw;
+  text-align: center;
 }
 
 .landingPage__scroll-up-button {
@@ -169,11 +176,21 @@
   }
 
   .landingPage__info {
-    font-size: 1.7vw;
+    font-size: 2vw;
+    line-height: 3.5vw;
   }
 
   .landingPage__button {
-    font-size: 1.2vw;
+    font-size: 1.7vw;
+    padding: 2vw 4vw;
+  }
+
+  .kickstarter-button {
+    height: auto;
+  }
+
+  .landingPage__scroll-button {
+    margin-bottom: 5vw;
   }
 
   .ss__title {
@@ -190,18 +207,33 @@
 }
 
 @media screen and (max-width: 750px) {
-  .landingPage__info {
-    line-height: 2.7vw;
+  .ss__detail {
+    width: 65vw;
+  }
+
+  .ss__title {
+    font-size: 3vw;
   }
 
   .ss__detail {
-    width: 65vw;
+    font-size: 1.75vw;
+    border-radius: 20px;
+  }
+
+  .landingPage__logo {
+    max-width: 25vw;
+    margin: 2vw 0 0 5vw;
   }
 
   .follow__button {
     padding: 0;
     width: 40px;
     height: 30px;
+  }
+
+  .landingPage__scroll-button {
+    align-self: center;
+    margin: 0 0 5vw;
   }
 
   .instagram {
@@ -219,50 +251,90 @@
   }
 
   .landingPage__scroll-up-button {
-    width: 4vw;
-    height: 4vw;
-    background: var(--olive) url(../../images/ExtraSmallArrow.svg) center
-      no-repeat;
+    width: 5vw;
+    height: 5vw;
+    background: var(--olive) url(../../images/SmallArrow.svg) center no-repeat;
   }
 }
 
 @media screen and (max-width: 450px) {
+  @keyframes buttonPress {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(1.5vw) translateY(1.5vw);
+    }
+  }
+
+  .buttonPress {
+    animation: buttonPress ease 0.25s 1 forwards;
+  }
+
+  .follow__buttons {
+    margin-bottom: 10px;
+  }
+
+  .follow__button {
+    padding: 5vw 7vw;
+    width: 40px;
+    height: 30px;
+    margin: 2vw;
+  }
+
+  .landingPage__main-info {
+    flex-direction: column-reverse;
+  }
+
   .ss__comment {
-    padding: 1vw 2.5vw;
     font-size: 2.4vw;
     max-width: 50vw;
+    margin-bottom: 5vw;
+    padding: 4vw 8vw;
+    box-shadow: var(--box-shadow-mobile) var(--lime);
+    line-height: 4vw;
   }
 
   .ss__detail {
-    font-size: 2.4vw;
+    font-size: 2.75vw;
     padding: 5vw;
     border-radius: 20px;
   }
 
   .landingPage__button {
-    font-size: 2.2vw;
-    padding: 2vw 4vw;
+    font-size: 3vw;
+    padding: 3vw 7vw;
+    margin: 10px 0 10px;
+  }
+
+  .landingPage__buttons {
+    align-items: center;
   }
 
   .ss__title {
-    font-size: 3vw;
+    font-size: 5vw;
+    text-align: center;
   }
 
   .landingPage__info {
-    font-size: 3vw;
-    line-height: 4vw;
-    margin-left: 5vw;
+    font-size: 4vw;
+    line-height: 6vw;
+    max-width: 80vw;
+    margin: 0;
+    margin-bottom: 5vw;
+    text-align: center;
   }
 
   .landingPage__logo {
-    max-width: 35vw;
-    margin: 3vw 0 0 4vw;
+    max-width: 40vw;
+    margin: 5vw 0 0 5vw;
   }
 
   .landingPage__scroll-button {
     margin: 5vw 0 9vw;
     align-self: center;
-    padding: 2vw 5vw;
+    padding: 3vw 7vw;
+    max-width: 70vw;
   }
 
   .landingPage__scroll-up-button {
@@ -275,7 +347,7 @@
   }
 
   .landingPage__copyright {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   .survey-button {
@@ -291,14 +363,18 @@
   }
 
   .instagram {
+    background: var(--purple) url(../../images/MedInstagram.svg) center
+      no-repeat;
     box-shadow: var(--box-shadow-mobile) var(--lime);
   }
 
   .tiktok {
+    background: var(--apricot) url(../../images/MedTikTok.svg) center no-repeat;
     box-shadow: var(--box-shadow-mobile) var(--jade);
   }
 
   .linkedin {
+    background: var(--lime) url(../../images/MedLinkedIn.svg) center no-repeat;
     box-shadow: var(--box-shadow-mobile) var(--peach);
   }
 
