@@ -296,14 +296,15 @@
   }
 
   .ss__detail {
-    font-size: 2.75vw;
-    padding: 5vw;
+    font-size: 3vw;
+    padding: 7vw;
     border-radius: 20px;
+    box-shadow: var(--box-shadow-mobile) var(--jade);
   }
 
   .landingPage__button {
-    font-size: 3vw;
-    padding: 3vw 7vw;
+    font-size: 3.5vw;
+    padding: 4vw 8vw;
     margin: 10px 0 10px;
   }
 
@@ -317,17 +318,16 @@
   }
 
   .landingPage__info {
-    font-size: 4vw;
+    font-size: 5vw;
     line-height: 6vw;
     max-width: 80vw;
-    margin: 0;
-    margin-bottom: 5vw;
+    margin: 4vw 0 10vw;
     text-align: center;
   }
 
   .landingPage__logo {
-    max-width: 40vw;
-    margin: 5vw 0 0 5vw;
+    max-width: 45vw;
+    margin: 7vw 0 0 7vw;
   }
 
   .landingPage__scroll-button {
@@ -356,6 +356,7 @@
 
   .follow-button {
     box-shadow: var(--box-shadow-mobile) var(--pink);
+    padding: 4vw 15vw;
   }
 
   .kickstarter-button {
@@ -380,6 +381,10 @@
 
   .landingPage__scroll-button {
     box-shadow: var(--box-shadow-mobile) var(--lime);
+    margin: 5vw 0 9vw;
+    align-self: center;
+    padding: 4vw 10vw;
+    max-width: 80vw;
   }
 
   .landingPage__scroll-up-button {
