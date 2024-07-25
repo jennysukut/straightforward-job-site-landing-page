@@ -289,14 +289,17 @@
   .ss__comment {
     font-size: 3vw;
     max-width: 50vw;
+    margin: 0;
+    align-self: center;
     margin-bottom: 5vw;
-    padding: 4vw 8vw;
+    padding: 5vw 10vw;
     box-shadow: var(--box-shadow-mobile) var(--lime);
     line-height: 4.5vw;
+    border-radius: 20px;
   }
 
   .ss__detail {
-    font-size: 3vw;
+    font-size: 3.3vw;
     padding: 7vw;
     border-radius: 20px;
     box-shadow: var(--box-shadow-mobile) var(--jade);
@@ -339,8 +342,10 @@
   }
 
   .landingPage__scroll-up-button {
-    width: 10vw;
-    height: 10vw;
+    width: 13vw;
+    height: 13vw;
+    background: var(--olive) url(/src/images/SmallArrow.svg) center no-repeat;
+    margin: 5px 0 0;
   }
 
   .kickstarter-button {

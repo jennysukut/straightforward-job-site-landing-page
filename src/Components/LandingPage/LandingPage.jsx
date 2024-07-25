@@ -224,8 +224,7 @@ function LandingPage() {
         </div>
       </div>
       <p className="ss__comment" onClick={handleInstagramClick}>
-        Curious how we’ll implement these & why? Follow us on social media where
-        we’ll be chatting abut each element and our implementation!
+        Want to see behind the scenes + learn more? Follow us on Instagram!
       </p>
       <button
         onClick={clickedButton === "scroll" ? unClick : handleScrollClick}
