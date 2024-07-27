@@ -526,7 +526,11 @@ function SurveyForm({ activeModal, setActiveModal }) {
             </div>
           );
         })}
-        <input type="hidden" name="_redirect" value="http://localhost:5174/" />
+        <input
+          type="hidden"
+          name="_redirect"
+          value="http://straightforwardjobsite.com"
+        />
 
         <button
           className={
