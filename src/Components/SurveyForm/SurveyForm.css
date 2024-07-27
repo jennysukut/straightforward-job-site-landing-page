@@ -24,11 +24,11 @@ select {
   animation: buttonPress ease 0.25s 1 forwards;
 }
 
-.modal {
+.surveyModal {
   display: none;
   justify-content: center;
   background-color: var(--cream);
-  position: absolute;
+  position: absolute !important;
   width: 100%;
   z-index: 500;
   visibility: hidden;
@@ -36,7 +36,7 @@ select {
   padding-bottom: 7vw;
 }
 
-.modal__opened {
+.surveyModal__opened {
   visibility: visible;
   display: flex;
 }

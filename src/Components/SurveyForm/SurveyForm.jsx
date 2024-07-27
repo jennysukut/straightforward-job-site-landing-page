@@ -342,7 +342,13 @@ function SurveyForm({ activeModal, setActiveModal }) {
   };
 
   return (
-    <div className={activeModal === "survey" ? "modal modal__opened" : "modal"}>
+    <div
+      className={
+        activeModal === "survey"
+          ? "surveyModal surveyModal__opened"
+          : "surveyModal"
+      }
+    >
       <form
         className="surveyForm"
         action="https://submit-form.com/uDuHzE9NU"
