@@ -195,10 +195,12 @@ select {
   .surveyForm {
     min-width: 70vw;
     max-width: 80vw;
+    border-radius: 5vw !important;
+    box-shadow: var(--box-shadow-mobile) var(--jade);
   }
 
   .maintitle {
-    font-size: 30px;
+    font-size: 6vw;
   }
 
   .halfsizeQ {
@@ -228,7 +230,7 @@ select {
   input,
   textarea,
   select {
-    margin-bottom: 30px;
+    margin-bottom: 5vw;
   }
 
   .dropdownselect {
@@ -246,7 +248,8 @@ select {
   }
 
   .surveyForm__title {
-    font-size: 4vw;
+    font-size: 5vw;
+    margin-top: 8vw;
   }
 
   .interest-label {
@@ -267,10 +270,23 @@ select {
   .ageQ {
     width: 20vw;
     margin-right: 5vw;
+    margin-left: 3vw;
   }
 
   .general-info {
     box-shadow: var(--box-shadow-mobile) var(--lime) !important;
+  }
+
+  .required:after {
+    font-size: 5vw;
+  }
+
+  .dropdown__label {
+    line-height: 5vw;
+  }
+
+  .surveyForm__textarea {
+    border-radius: 4vw;
   }
 
   @keyframes buttonPress {

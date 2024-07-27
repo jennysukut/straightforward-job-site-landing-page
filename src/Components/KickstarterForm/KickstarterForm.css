@@ -145,6 +145,7 @@ select {
   .kickstarterForm {
     min-width: 70vw;
     max-width: 80vw;
+    border-radius: 5vw;
   }
 
   .maintitle {
@@ -169,7 +170,7 @@ select {
   input,
   textarea,
   select {
-    margin-bottom: 30px;
+    margin-bottom: 5vw;
   }
 
   .kickstarterForm__title {
@@ -212,5 +213,9 @@ select {
 
   .buttonPress {
     animation: buttonPress ease 0.25s 1 forwards;
+  }
+
+  .required:after {
+    font-size: 5vw;
   }
 }
