@@ -46,7 +46,7 @@ function LandingPage() {
       // window.open("https://form.jotform.com/241651627129154", "_blank");
       setActiveModal("survey");
       unClick();
-    }, 1000);
+    }, 500);
   };
 
   const handleSupportClick = () => {
