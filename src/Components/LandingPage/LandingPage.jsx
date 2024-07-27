@@ -1,6 +1,8 @@
 import "./LandingPage.css";
 import logo from "../../images/SFJSLogo.svg";
 import { useState } from "react";
+import SurveyForm from "../SurveyForm/SurveyForm";
+import KickstarterForm from "../KickstarterForm/KickstarterForm";
 
 function LandingPage() {
   const stepsAndStandards = [
@@ -17,6 +19,7 @@ function LandingPage() {
   const [clickedButton, setClickedButton] = useState("");
   const [followMenu, setFollowMenu] = useState("closed");
   const [followClickedButton, setFollowClickedButton] = useState("");
+  const [activeModal, setActiveModal] = useState("");
 
   console.log(followMenu);
 
@@ -26,7 +29,7 @@ function LandingPage() {
     setFollowMenu("open");
     setTimeout(() => {
       unClick();
-    }, 500);
+    }, 250);
   };
 
   const handleFollowUnClick = () => {
@@ -34,26 +37,24 @@ function LandingPage() {
     setFollowMenu("closed");
     setTimeout(() => {
       unClick();
-    }, 500);
+    }, 250);
   };
 
   const handleSurveyClick = () => {
     setClickedButton("survey");
     setTimeout(() => {
-      window.open("https://form.jotform.com/241651627129154", "_blank");
+      // window.open("https://form.jotform.com/241651627129154", "_blank");
+      setActiveModal("survey");
       unClick();
     }, 1000);
   };
 
   const handleSupportClick = () => {
     setClickedButton("support");
+    setActiveModal("kickstarter");
     setTimeout(() => {
-      //put information about the kickstarter's support date? Perhaps they could sign up for an email list to stay informed?
-
-      //   window.open("https://form.jotform.com/241651627129154", "_blank");
       unClick();
-      //could write code here to change the button text to reflect how it's loading?
-    }, 1000);
+    }, 500);
   };
 
   const handleScrollClick = () => {
@@ -115,6 +116,7 @@ function LandingPage() {
         alt="Straightforward Job Site Logo"
         className="landingPage__logo"
       />
+      <SurveyForm activeModal={activeModal} setActiveModal={setActiveModal} />
       <div className="landingPage__main-info">
         <div className="landingPage__buttons">
           {/* <a href="https://form.jotform.com/241651627129154" target="_blank"> */}
@@ -183,6 +185,7 @@ function LandingPage() {
           ) : (
             ""
           )}
+
           <button
             id="kickstarter"
             onClick={clickedButton === "support" ? unClick : handleSupportClick}
@@ -235,6 +238,10 @@ function LandingPage() {
         }
       ></button>
       <p className="landingPage__copyright">©2024, Straightforward Job Site</p>
+      <KickstarterForm
+        activeModal={activeModal}
+        setActiveModal={setActiveModal}
+      />
     </div>
   );
 }

@@ -25,11 +25,7 @@ input[type="submit"] {
   box-shadow: var(--box-shadow-small) var(--jade);
   margin-left: 2vw;
   font-family: "Satoshi Bold";
-  /* font-size: 0.9vw; */
   letter-spacing: 3px;
-  /* height: 2.5vw; */
-  /* padding-left: 1.2vw;
-  padding-right: 1.2vw; */
   padding: 0.8vw 2vw;
   font-size: 1vw;
 }
@@ -54,4 +50,45 @@ input[type="submit"] {
 a:-webkit-any-link {
   text-decoration: none;
   color: var(--cream);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input [type="radio"],
+textarea,
+select {
+  background-color: var(--cream);
+  border-radius: 15px;
+  box-shadow: var(--box-shadow-small) var(--jade);
+  padding: 7px 10px 7px 10px;
+  color: var(--darkgreen);
+  border-color: var(--jade);
+  border-width: 2px;
+  border-style: solid;
+  font-size: 16px;
+  font-family: "Satoshi Bold";
+  letter-spacing: 2px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+  color: var(--jade);
+  opacity: 75%;
+}
+
+@media screen and (max-width: 600px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input [type="radio"],
+  textarea,
+  select {
+    box-shadow: var(--box-shadow-mobile) var(--jade);
+    padding: 2vw 3vw;
+    font-size: 3vw;
+    border-radius: 20px;
+  }
 }

@@ -1,0 +1,288 @@
+label {
+  margin-bottom: 7px;
+  max-width: 50vw;
+  font-size: 17px;
+  align-self: center;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 20px;
+}
+
+@keyframes buttonPress {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0.5vw) translateY(0.5vw);
+  }
+}
+
+.buttonPress {
+  animation: buttonPress ease 0.25s 1 forwards;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  background-color: var(--cream);
+  position: absolute;
+  width: 100%;
+  z-index: 500;
+  visibility: hidden;
+  padding-top: 5vw;
+  padding-bottom: 7vw;
+}
+
+.modal__opened {
+  visibility: visible;
+  display: flex;
+}
+
+.close-button {
+  background: transparent url(../../images/SmallCloseButton.svg) center
+    no-repeat;
+  border: none;
+  box-shadow: none;
+  border-radius: 0%;
+  width: 18px;
+  height: 18px;
+  align-self: flex-end;
+  margin-right: -2vw;
+}
+
+.surveyForm {
+  background: var(--cream);
+  border: solid 2px var(--jade);
+  box-shadow: var(--box-shadow-large) var(--jade);
+  border-radius: 2vw;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  min-width: 50vw;
+}
+
+.surveyForm__group {
+  display: flex;
+  justify-content: center;
+}
+
+.surveyForm__question {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.market-role,
+.general-info {
+  width: 40vw;
+  align-self: center;
+}
+
+.general-info {
+  box-shadow: var(--box-shadow-small) var(--lime) !important;
+}
+
+.sfUse {
+  margin: 10px;
+}
+
+.halfsizeQ {
+  width: 19vw;
+  box-shadow: var(--box-shadow-small) var(--lime) !important;
+}
+
+.age {
+  margin-right: 2vw;
+}
+
+.dropdownQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dropdown__label {
+  padding: 20px 10px 20px 20px;
+  color: var(--olive);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.jobSpecQ__title {
+  color: var(--apricot);
+}
+
+.interest-label {
+  color: var(--purple);
+  margin-right: 20px;
+  width: 30vw;
+  text-align: center;
+}
+
+.surveyForm__textarea {
+  width: 40vw;
+}
+
+.dropdownselect {
+  min-width: 33vw;
+  margin-left: 20px;
+  box-shadow: var(--box-shadow-small) var(--orange);
+  border: solid medium var(--pink);
+  color: var(--orange);
+}
+
+.dropdownselect-interest {
+  width: 30vw;
+}
+
+.surveyForm__title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.surveyForm__question-title {
+  text-align: center;
+  margin-bottom: 15px;
+  align-self: center;
+  color: var(--jade);
+  font-size: 17px;
+}
+
+.form-submit-button {
+  width: 15vw;
+  align-self: flex-end;
+  background-color: var(--orange);
+  color: var(--cream);
+  border: none;
+  box-shadow: var(--box-shadow-large) var(--hotpink);
+  margin-top: 3vw;
+  font-size: 14px;
+  margin-bottom: 2vw;
+}
+
+.darktitle {
+  color: var(--darkgreen);
+}
+
+.maintitle {
+  font-size: 25px;
+}
+
+.required:after {
+  content: "*";
+  color: var(--lime);
+  font-size: 20px;
+}
+
+.clickButton {
+  box-shadow: none;
+  transition: 0.25s;
+}
+
+@media screen and (max-width: 600px) {
+  label {
+    margin-bottom: 8px;
+    font-size: 3.5vw;
+    max-width: 70vw;
+  }
+
+  .surveyForm {
+    min-width: 70vw;
+    max-width: 80vw;
+  }
+
+  .maintitle {
+    font-size: 30px;
+  }
+
+  .halfsizeQ {
+    width: 38vw;
+    box-shadow: var(--box-shadow-mobile) var(--lime) !important;
+  }
+
+  .market-role,
+  .general-info {
+    width: 70vw;
+  }
+
+  .surveyForm__textarea {
+    width: 73vw;
+  }
+
+  .surveyForm__question-title {
+    margin-bottom: 20px;
+    font-size: 3.5vw;
+    margin-top: 2vw;
+  }
+
+  .surveyForm__question {
+    margin: 0;
+  }
+
+  input,
+  textarea,
+  select {
+    margin-bottom: 30px;
+  }
+
+  .dropdownselect {
+    min-width: 60vw;
+    margin: 0;
+    max-width: 80vw;
+  }
+
+  .dropdown__label {
+    font-size: 3.5vw;
+  }
+
+  .dropdownselect-interest {
+    width: 50vw;
+  }
+
+  .surveyForm__title {
+    font-size: 4vw;
+  }
+
+  .interest-label {
+    text-align: center;
+    width: 77vw;
+    margin: 0;
+  }
+
+  .form-submit-button {
+    width: 29vw;
+    box-shadow: var(--box-shadow-mobile) var(--hotpink);
+    height: 8vw;
+    font-size: 3vw;
+    margin-bottom: 4vw;
+    margin-right: 3vw;
+  }
+
+  .ageQ {
+    width: 20vw;
+    margin-right: 5vw;
+  }
+
+  .general-info {
+    box-shadow: var(--box-shadow-mobile) var(--lime) !important;
+  }
+
+  @keyframes buttonPress {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(1.5vw) translateY(1.5vw);
+    }
+  }
+
+  .buttonPress {
+    animation: buttonPress ease 0.25s 1 forwards;
+  }
+}
