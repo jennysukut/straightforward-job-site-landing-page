@@ -6,6 +6,7 @@ function SurveyForm({ activeModal, setActiveModal }) {
     "Select One",
     "United States",
     "United Kingdom",
+    "Canada",
     "Afghanistan",
     "Albania",
     "Algeria",
