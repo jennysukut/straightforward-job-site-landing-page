@@ -141,7 +141,7 @@ function LandingPage() {
                 : "landingPage__button follow-button"
             }
           >
-            follow us
+            connect on socials
           </button>
           {followMenu === "open" ? (
             <div className="follow__buttons">
@@ -195,7 +195,7 @@ function LandingPage() {
                 : "landingPage__button kickstarter-button"
             }
           >
-            support our kickstarter
+            follow our crowdfunding campaign
           </button>
         </div>
         <h3 className="landingPage__info">

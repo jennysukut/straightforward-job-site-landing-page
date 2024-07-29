@@ -35,9 +35,9 @@ function KickstarterForm({ activeModal, setActiveModal }) {
       >
         <button className="close-button" onClick={handleClose}></button>
         <h3 className="kickstarterForm__title darktitle maintitle">
-          Sign Up for Straightforward Job Site's Progress + Kickstarter Updates
+          Sign Up for Straightforward Job Site's Progress + Crowdfunding Updates
         </h3>
-        <p className="kickstarterForm__subtitle">{`{we'll send you updates on our progress and notify you when our kickstarter goes live, while respectig your time + inbox}`}</p>
+        <p className="kickstarterForm__subtitle">{`{we'll send you updates on our progress and notify you when our crowdfunding campaign goes live, while respectig your time + inbox}`}</p>
         <label className="required" htmlFor="name">
           Name
         </label>
@@ -46,7 +46,7 @@ function KickstarterForm({ activeModal, setActiveModal }) {
           type="text"
           id="A Name"
           name="A Name"
-          placeholder="Fantastic Mr. Bean"
+          placeholder="Fantastic Mr. Fox"
           required
         />
         <label className="required" htmlFor="email">
@@ -57,7 +57,7 @@ function KickstarterForm({ activeModal, setActiveModal }) {
           type="email"
           id="An Email"
           name="An Email"
-          placeholder="fantasticbean@email.com"
+          placeholder="fantasticmrfox@burrow.com"
           required
         />
         <input
