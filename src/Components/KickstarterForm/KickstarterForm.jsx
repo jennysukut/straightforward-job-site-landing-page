@@ -37,7 +37,7 @@ function KickstarterForm({ activeModal, setActiveModal }) {
         <h3 className="kickstarterForm__title darktitle maintitle">
           Sign Up for Straightforward Job Site's Progress + Crowdfunding Updates
         </h3>
-        <p className="kickstarterForm__subtitle">{`{we'll send you updates on our progress and notify you when our crowdfunding campaign goes live, while respectig your time + inbox}`}</p>
+        <p className="kickstarterForm__subtitle">{`{we'll send you updates on our progress and notify you when our crowdfunding campaign goes live, while respecting your time + inbox}`}</p>
         <label className="required" htmlFor="name">
           Name
         </label>
